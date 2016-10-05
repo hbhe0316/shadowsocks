@@ -1,3 +1,6 @@
+本测试环境旨在使得Centos服务器可以翻墙，
+注意，翻墙过后，一定要弘扬社会主义价值观，宣传马列主义，马泽东思想，切勿有不当言论。
+
 系统环境是centos 7.2
 # cat /etc/redhat-release 
 CentOS Linux release 7.2.1511 (Core)
@@ -64,3 +67,23 @@ $unset https_proxy
 或者在/etc/profile中将加入的两个地方屏蔽
 再次执行命令
 #source /etc/profile
+
+
+我的Shadowsocks.json文件
+# cat /home/Shadowsocks.json 
+{
+"server":"23.106.156.81",
+"server_port":8383,
+"local_address": "127.0.0.1",
+"local_port":1080,
+"password":"pass3",
+"timeout":300,
+"method":"rc4-md5",
+"fast_open": false
+}
+或者下面这组也可以
+服务器：hk02-17.ssv7.net
+端口: 36262
+密码: eeNmS679JNSy
+加密方式: aes-256-cfb
+服务器IP：节点地址
