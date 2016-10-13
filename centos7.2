@@ -56,6 +56,9 @@ export https_proxy='http://localhost:8118'
 执行命令生效
 #source /etc/profile
 
+如果需要docker翻墙，执行命令
+export http_proxy='http://$HOSTNAME:8118' docker daemon
+
 打开终端执行命令
 #curl www.google.com  #测试是否成功
 
